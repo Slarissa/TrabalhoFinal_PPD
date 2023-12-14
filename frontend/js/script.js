@@ -77,7 +77,6 @@ const showNotification = (userName) => {
     if (Notification.permission === "granted") {
         const options = {
             body: `${userName} entrou na sala.`,
-            icon: "caminho/para/seu/icone.png" // Adicione o caminho do ícone desejado
         };
 
         new Notification("Sala de Chat", options);
