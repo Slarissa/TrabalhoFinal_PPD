@@ -99,7 +99,7 @@ const handleLogin = (event) => {
     login.style.display = "none"
     chat.style.display = "flex"
 
-    websocket = new WebSocket("ws://localhost:8080")
+    websocket = new WebSocket("wss://trabalhofinal-ppd.onrender.com")
     websocket.onmessage = processMessage
 
     // Mostrar notificação ao entrar na sala
